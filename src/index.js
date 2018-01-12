@@ -59,7 +59,7 @@ const reducer = combineReducers({
 
 //const state = { cantidad: 2 };
 
-const store = createStore(reducer);
+const store = createStore(reducer, applyMiddleware(ReduxThunk) );
 
 
 ReactDOM.render(
